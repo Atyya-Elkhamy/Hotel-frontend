@@ -99,14 +99,14 @@ const Header = () => {
                         My Profile
                       </Link>
                     </li>
-                  )}
+                 )} 
                   {userIsOwner() && (
                     <li>
                       <Link className="dropdown-item" to="/hotelownerprofile">
                         Hotel Owner Profile
                       </Link>
                     </li>
-                  )}
+                 )} 
                   {userIsAdmin() && (
                     <li>
                       <Link className="dropdown-item" to="/adminpanel">

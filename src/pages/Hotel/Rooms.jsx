@@ -286,7 +286,7 @@ export default function RoomsPage() {
                           View Details
 
                         </button>
-                          {userIsOwner() && ( 
+                          {/* {userIsOwner() && (  */}
                         <button
                           className="btn py-2 px-3"
                           style={{
@@ -315,8 +315,8 @@ export default function RoomsPage() {
                           </svg>
                           Add
                         </button>
-                          )}
-                                   {userIsOwner() && ( 
+                          {/* )} */}
+                                   {/* {userIsOwner() && (  */}
                         <button
                           onClick={() =>
                             navigate(`/editroom/${room.hotel}/${room.id}`)
@@ -336,7 +336,7 @@ export default function RoomsPage() {
                         >
                           Edit
                         </button>
-                                   )}
+                              {/* {/* )} */}
                       </div>
                     </div>
                   </div>

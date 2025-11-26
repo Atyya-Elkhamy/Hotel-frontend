@@ -138,22 +138,22 @@ const handleDelete = () => {
         </div>
 
         <div className="d-flex flex-wrap gap-3 mb-5">
-        {userIsOwner() && (
+        {/* {userIsOwner() && ( */}
 
           <button className="btn btn-primary border-0" onClick={() => navigate(`/createimage/${hotel.id}`)}>
             <ImagePlus className="me-2" size={18} /> Add Image
           </button>
-        )}
+        {/* )} */}
 
           <button className="btn btn-primary border-0" style={{ border : "none"}} onClick={() => navigate(`/hotels/${hotel.id}/reviews`)}>
             <MessagesSquare className="me-2" size={18} /> Show Reviews
           </button>
-          {userIsOwner() && (
+          {/* {userIsOwner() && ( */}
 
           <button className="btn btn-primary border-0" onClick={() => navigate(`/edithotel/${hotel.id}`)}>
             <Edit3 className="me-2" size={18} /> Edit
           </button>
-          )}
+          {/* )} */}
               {userIsAdmin() && (
           <button
             className="btn btn-danger"
@@ -167,22 +167,22 @@ const handleDelete = () => {
               AddBooking
           </button>
                    )}
-    {userIsOwner() && (
+    {/* {userIsOwner() && ( */}
           <button
             className="btn btn-primary" style={{ marginLeft: "auto", border: "none" }}
             onClick={() => navigate(`/addroom/${hotel.id}`)}
           >
             Add Room
           </button>
-            )}
-        {userIsOwner() && (      
+            {/* )} */}
+        {/* {userIsOwner() && (       */}
           <button
             className="btn btn-primary" style={{ border: "none" }}
             onClick={() => navigate(`/addtype/${hotel.id}`)}
           >
             Add Room Type
           </button>
-        )}
+        {/* )} */}
         </div>
          
         <button

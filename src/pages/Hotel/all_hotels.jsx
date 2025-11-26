@@ -136,11 +136,9 @@ export default function SimpleHotelListingPage() {
       />
 
       {/* Add Hotel Button */}
-      {/* {userIsOwner() && ( */}
         <button className="btn btn-primary m-5 border-0" onClick={() => navigate(`/addhotel`)}>
           + Add Hotel
         </button>
-      {/* )} */}
 
       {/* Heading */}
       <h1 className="text-center p-3 m-2">Discover Your Hotel</h1>
