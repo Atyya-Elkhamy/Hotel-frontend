@@ -17,7 +17,7 @@ const initialState = {
   selectedBooking: null,
   loading: false,
   error: null,
-  formError:null,
+  formError: null,
 };
 
 // Thunks for async actions
@@ -211,9 +211,6 @@ const bookingSlice = createSlice({
       state.error = action.error.message;
     });
 
-    // builder.addCase(deleteBooking.fulfilled, (state, action) => {
-    //   state.bookings = state.bookings.filter((b) => b.id !== action.payload);
-    // });
   },
 });
 
