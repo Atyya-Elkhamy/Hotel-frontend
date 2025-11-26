@@ -8,6 +8,7 @@ export const updateHotel = (id, data) => {
   console.log(`Updating Hotel with ID ${id} and Data:`, data);
   return axiosInstance.put(`/hotels/update/${id}/`, data);
 };
+
 export const getHotelDetail = (id) =>
   axiosInstance.get(`/hotels/detail/${id}/`); // pre
 export const deleteHotel = (id) =>
