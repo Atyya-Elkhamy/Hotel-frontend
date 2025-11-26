@@ -213,6 +213,5 @@ const bookingSlice = createSlice({
 
   },
 });
-
 // Export actions
 export default bookingSlice.reducer;
