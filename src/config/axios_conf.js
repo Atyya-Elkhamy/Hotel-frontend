@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: "http://127.0.0.1:8000",
+    baseURL: "https://hotelapi.rootmatrix.cloud",
     headers: {
         'Content-Type': 'application/json',
         // 'Authorization': `Bearer ${token}`
@@ -31,7 +31,7 @@ axiosInstance.interceptors.response.use(
             try {
                 const refresh = localStorage.getItem('refresh');
                 if (refresh) {
-                    const response = await axios.post('http://127.0.0.1:8000/accounts/login/refresh/', {
+                    const response = await axios.post('https://hotelapi.rootmatrix.cloud/accounts/login/refresh/', {
                         refresh: refresh,
                     });
                     localStorage.setItem('access', response.data.access);

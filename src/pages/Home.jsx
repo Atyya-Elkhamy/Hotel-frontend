@@ -122,7 +122,7 @@ const Home = () => {
                       src={
                         hotel.image.length > 0
                           ? hotel.image[0].image.startsWith("/media/")
-                            ? `http://127.0.0.1:8000${hotel.image[0].image}`
+                            ? `https://hotelapi.rootmatrix.cloud${hotel.image[0].image}`
                             : hotel.image[0].image
                           : "https://via.placeholder.com/300x200"
                       }

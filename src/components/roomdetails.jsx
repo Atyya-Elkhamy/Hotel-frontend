@@ -139,7 +139,7 @@ const RoomDetails = () => {
                 overflow: 'hidden'
               }}>
                 <img
-                  src={`http://127.0.0.1:8000${images[selectedImage]?.image}`}
+                  src={`https://hotelapi.rootmatrix.cloud${images[selectedImage]?.image}`}
                   alt="Room"
                   style={{
                     width: '100%',
@@ -238,7 +238,7 @@ const RoomDetails = () => {
                     }}
                   >
                     <img
-                      src={`http://127.0.0.1:8000${image.image}`}
+                      src={`https://hotelapi.rootmatrix.cloud${image.image}`}
                       alt={`Room thumbnail ${index + 1}`}
                       style={{
                         width: '100%',

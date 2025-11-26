@@ -72,7 +72,7 @@ export default function SimpleHotelListingPage() {
             .filter((hotel) => hotel.image.length > 0)
             .map((hotel, index) => {
               const imageUrl = hotel.image[0].image.startsWith("/media/")
-                ? `http://127.0.0.1:8000${hotel.image[0].image}`
+                ? `https://hotelapi.rootmatrix.cloud${hotel.image[0].image}`
                 : hotel.image[0].image;
 
               return (
@@ -165,7 +165,7 @@ export default function SimpleHotelListingPage() {
               const imageUrl =
                 hotel.image.length > 0
                   ? hotel.image[0].image.startsWith("/media/")
-                    ? `http://127.0.0.1:8000${hotel.image[0].image}`
+                    ? `https://hotelapi.rootmatrix.cloud${hotel.image[0].image}`
                     : hotel.image[0].image
                   : null;
 

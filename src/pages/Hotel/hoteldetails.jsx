@@ -49,7 +49,7 @@ const handleDelete = () => {
   const firstImage =
     hotel.image && hotel.image.length > 0
       ? hotel.image[0].image.startsWith("/media/")
-        ? `http://127.0.0.1:8000${hotel.image[0].image}`
+        ? `https://hotelapi.rootmatrix.cloud${hotel.image[0].image}`
         : hotel.image[0].image
       : hotel.name;
 
@@ -105,7 +105,7 @@ const handleDelete = () => {
               <Carousel.Item key={idx}>
                 <img
                   className="d-block w-100"
-                  src={img.image.startsWith("/media/") ? `http://127.0.0.1:8000${img.image}` : img.image}
+                  src={img.image.startsWith("/media/") ? `https://hotelapi.rootmatrix.cloud${img.image}` : img.image}
                   alt={`Slide ${idx}`}
                   style={{ maxHeight: '400px', objectFit: 'cover' }}
                 />
