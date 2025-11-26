@@ -122,3 +122,4 @@ export const fetchQueryHistory = (modelFilter = null) => {
   const url = modelFilter ? `/chat/history/?model=${modelFilter}` : '/history/';
   return axiosInstance.get(url);
 };
+
